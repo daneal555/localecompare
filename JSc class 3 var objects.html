@@ -1,0 +1,46 @@
+<html> 
+    <head> 
+        <title> 
+Objects
+        </title>
+    </head>
+    <body> 
+        <h3> Name & detials of the employee</h3>
+        <p id="employee1"> </p>
+        <p id="employee2"> </p>
+        <p id="Typo"></p>
+
+<button onclick="my()"> Click here</button>
+        <script> 
+        var employee1={ 
+            Firstname: "Mohamed",
+            Lastname:"Daneal",
+            nationality: "Malabari",
+            haircolor: "Black" }; 
+    
+        var employee2={ 
+            Firstname: "Rasho",
+            Lastname:"fendi",
+            nationality: "korean",
+            haircolor: "Red"};
+
+document.getElementById("employee1").innerHTML= employee1.Firstname +" "+
+employee1.Lastname+ " is " + employee1.nationality + " and has a " + employee1.haircolor +
+" hair color "; 
+document.getElementById("employee2").innerHTML= employee2.Firstname+" "+
+employee2.Lastname+ " is " + employee2.nationality + " and has a " + employee2.haircolor +
+" hair color"; 
+function my(){ 
+
+    document.getElementById("Typo").innerHTML=
+    typeof x + "<br>"+
+    typeof 3.14 + "<br>"+
+    typeof false + "<br>"+
+    typeof [1,2,3,4] + "<br>"+
+    typeof{name:'john',age:34};
+}
+
+        </script> 
+        
+        </body>
+        </html>

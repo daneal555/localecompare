@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <title> 
+            While Loop 
+        </title>
+    </head>
+    <body> 
+        <h2> While loop </h2>
+        <button onclick="myFunction()"> Click here </button>
+        <p id="demo"> </p>
+
+        <script> 
+        function myFunction(){ 
+            cars = ["BMW","Volvo","saab", "Ford"];
+            var i=0;
+            var text="";
+            while(cars[i]){ 
+                text +=cars[i] + "<br>"; 
+                i++;
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+        </script>
+    </body>
+</html>

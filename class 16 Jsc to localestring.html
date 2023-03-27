@@ -1,0 +1,35 @@
+<html> 
+    <head> 
+<script> 
+
+</script>
+    <title> 
+        To locale string
+    </title>
+    
+</head>
+    <body> 
+        <h2> To locale string </h2>
+        <input type="textbox" id = "input1">
+        
+<button onclick="Myfunction()"> Click here </button>
+<p id="results"> </p>
+<p id="results1"> </p>
+<p id="results2"> </p>
+
+<script> 
+
+function Myfunction() { 
+
+    let x = document.getElementById("input1").value;
+    let b= parseInt(x);
+    let a=b.toLocaleString();
+    document.getElementById("results").innerHTML=a; 
+    let w=b.toLocaleString("fi-FI"); 
+    document.getElementById("results1").innerHTML=w;
+    let v = b.toLocaleString("en-US", { style: "currency", currency: "USD"});
+    document.getElementById("results2").innerHTML=v;
+}
+</script>
+    </body>
+</html>

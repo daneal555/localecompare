@@ -1,0 +1,62 @@
+<html> 
+<head> 
+<title> 
+Calculator 
+</title>
+<style> 
+button {
+    size: 20px;
+    padding: 20px;
+} 
+input { 
+    padding: 5px;
+    
+}
+</style> 
+</head>
+<body> 
+    <h2> Calculator 2023</h2>
+<input type = "text" id = "input1"> <br><br>
+<input type = "text" id = "input2">
+<BR> <br>
+<button onclick="add()">   +   </button>
+<button onclick="sub()">   -   </button>
+<button onclick="div()">   /   </button>
+<button onclick="multi()">   *   </button>
+
+<script> 
+
+
+function add(){
+
+  var a= document.getElementById("input1").value; 
+ var b= document.getElementById("input2").value;
+    var c = (parseInt(a)+parseInt(b));
+   alert(c);
+} 
+
+
+function sub() { 
+    a= document.getElementById("input1").value; 
+ b= document.getElementById("input2").value;
+    var c = parseInt(a) - parseInt(b);
+    alert(c); 
+}
+
+function div() { 
+    a= document.getElementById("input1").value; 
+ b= document.getElementById("input2").value;
+    var c = parseInt(a) / parseInt(b);
+    alert(c);
+}
+
+function multi() { 
+    a= document.getElementById("input1").value; 
+ b= document.getElementById("input2").value;
+    var c = parseInt(a) * parseInt(b);
+    alert(c);
+}
+</script>
+
+</body>
+</html>

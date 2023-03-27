@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <title> 
+
+        </title>
+    </head>
+    <body> 
+        <h2> Convert from one type tp another ( String + Integer </h2>
+        <input type = "textbox" id="input"> 
+        <button onclick="myFunction()"> Convert </button>
+        <p id ="result1"></p>
+        <p id ="result2"></p>
+        <p id ="result3"> </p>
+        <script> 
+        function myFunction() { 
+    var x = document.getElementById("input").value;
+    document.getElementById("result1").innerHTML=typeof x; 
+var y= parseInt(x);
+document.getElementById("result2").innerHTML=typeof y;
+z = y.toString();
+document.getElementById("result3").innerHTML=typeof z;
+        }
+        </script>
+    </body>
+</html>

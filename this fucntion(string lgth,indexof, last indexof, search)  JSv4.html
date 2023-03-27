@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title> THIS FUNCTION & STRING LENGTH </title>
+</head>
+
+<body>
+    <h2> THIS FUNCTION & STRING LENGTH </h2>
+
+    <p> The person's full name is : </p>
+
+    <p id="Name"></p>
+    <p id="text"></p>
+    <p id="locate"> Where is the location
+        how long will the location take place
+    </p>
+<p id="p1"> This is where location takes place</p>
+        
+    </p>
+    <button onclick="myFunctionindex()"> Click it for lastIndex </button>
+    <button onclick="myFunctionloco()">Click to locate the word</button>
+    <p id="pos"></p>
+    <p id="last"></p>
+    <p id="locatewhere"></p>
+    <script>
+        var person = {
+            firstname: "Mohamed",
+            lastname: "Daneal",
+            FullName: function () {
+                return this.firstname + " " + this.lastname;
+            }
+        };
+
+        function myFunctionindex() {
+            var str = document.getElementById("locate").innerHTML;
+            var pos = str.indexOf("location");
+            document.getElementById("pos").innerHTML = pos;
+            document.getElementById("last").innerHTML = str.lastIndexOf("location");
+        }
+        document.getElementById("Name").innerHTML = person.FullName();
+        document.getElementById("text").innerHTML = person.FullName().length;
+ function myFunctionloco(){
+    var loco = document.getElementById("p1").innerHTML;
+    var pos= loco.search("location");
+    document.getElementById("locatewhere").innerHTML=pos;
+
+ }
+    </script>
+</body>
+
+</html>

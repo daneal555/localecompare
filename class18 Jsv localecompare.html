@@ -1,0 +1,26 @@
+<html> 
+    <head> 
+        <title> localeCompare </title>
+    </head>
+    <body> 
+
+        <h2> LocaleComapre btw strings </h2>
+        <input type="textbox" id="input1"> 
+        <input type="textbox" id="input2"> <br> 
+        <button onclick="myfunction()"> Click here </button>
+        <p id ="results"> </p>
+
+        <script> 
+        
+        function myfunction() { 
+            
+         var x = document.getElementById("input1").value;
+         
+         var y = document.getElementById("input2").value;
+         var z = x.localeCompare(y);
+        
+         document.getElementById("results").innerHTML=z;
+         }
+         </script>
+    </body>
+    </html>

@@ -1,0 +1,33 @@
+<html> 
+    <head> 
+        <title>  Looping tables of 2
+        </title>
+    </head>
+    <body> 
+    
+    <input type="text" id="textbox">
+    <button onclick="myFunction()"> Click here </button>
+<p id="print"> </p>
+
+<script> 
+function myFunction(){ 
+var pattern = "";
+var row = document.getElementById("textbox").value;
+ var cols =1; 
+
+while (cols <= row) { 
+    
+    var limit = 1;
+    while (limit <= cols) {  // limit <= row
+        //document.write("hi");
+        pattern=pattern+("*")+"   ";
+        limit=limit+1; }
+pattern=pattern+"<br>";
+cols=cols+1;
+
+}
+document.getElementById("print").innerHTML=pattern;
+}
+</script> 
+    </body>
+</html>

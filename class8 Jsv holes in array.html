@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title> Holes in array</title>
+
+    </head>
+    <body>
+        <h2> Holes in array </h2>
+        <button onclick="myFunction()"> Click here</button>
+
+        <p id="demo"> </p>
+        <script> 
+        function myFunction(){ 
+            var index; 
+            var text="<ul>"; 
+                var f = ["Banana", "Orange", "Apple", "Mango"];
+                for (index=0; index < f.length; ++index) { 
+                    text+="<li>" + f [index] + "</li>";
+                } 
+                text += "</ul>"; 
+                document.getElementById("demo").innerHTML=text; } 
+
+            </script>
+    </body> 
+</html>

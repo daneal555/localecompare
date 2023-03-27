@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <p> Sort & Reverse Function </p>
+    <button onclick="myFunction()"> Click here </button>
+    <p id="demo"> </p>
+    <p id="demo2"> </p>
+    <script>
+        var f = ["Banana", "orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = f;
+
+        function myFunction() {
+            f.sort();
+            document.getElementById("demo").innerHTML = f;
+            f.reverse();
+            document.getElementById("demo2").innerHTML = f;
+
+        }
+    </script>
+</body>
+
+</html>

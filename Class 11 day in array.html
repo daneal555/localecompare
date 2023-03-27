@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>
+        Day function
+    </title>
+</head>
+
+<body>
+    <h2> Find the day </h2>
+    <button onclick="Myfunction()"> Click Here </button>
+    <p id="demo"> </p>
+
+    <script>
+        var x;
+        var time = new Date().getDay();
+        function Myfunction(){
+
+        
+            if (time == 0) {
+                x = " Sunday";
+            }
+            else if (time == 1) {
+                x = "Monday"
+            }
+            else if (time == 2) {
+                x = "tuesday"
+            }
+            else if (time == 3) {
+                x = "Wednesday"
+            }
+            else if (time == 4) {
+                x = "Thursay"
+            }
+            else if (time == 5) {
+                x = "Friday"
+            }
+            else if (time == 6) {
+                x = "Saturday"
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+
+    </script>
+</body>
+
+</html>

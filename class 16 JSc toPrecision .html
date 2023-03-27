@@ -1,0 +1,29 @@
+<html> 
+    <head> 
+<script> 
+
+</script>
+    <title> 
+        To Precision (similar fixed)
+    </title>
+    
+</head>
+    <body> 
+        <h2> To Precision (similar fixed) </h2>
+        <input type="textbox" id = "input1">
+        <input type="textbox" id = "input2">
+<button onclick="Myfunction()"> Click here </button>
+<p id="results"> </p>
+<script> 
+
+function Myfunction() { 
+
+    var x = document.getElementById("input1").value;
+    var y = document.getElementById("input2").value;
+    var z = x*y; 
+
+    document.getElementById("results").innerHTML=z.toPrecision(5); 
+}
+</script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        Test for add,delete,sort & reverse
+    </title>
+</head>
+
+<body>
+    <h2> Array Functions for Add , Delete, Sort , Reverse </h2>
+
+    <input type="textbox" id="textbox">
+    <button onclick="myFunctionadd()"> ADD </button>
+    <button onclick="myFunctiondel()"> DEL </button>
+    <button onclick="myFunctionsort()"> SORT </button>
+    <button onclick="myFunctionreverse()"> REVERSE </button>
+    <p id="display"> <b> Current Array : </b> </p>
+    <p id="p1"> Current Array </p>
+    <p id="display2"> <b> Sorted In Ascending : </b> </p>
+    <p id="p2"> Sorted in Ascending</p>
+    <p id="display3"> <b> Sorted In descending : </b> </p>
+    <p id="p3"> Sorted in descending</p>
+    <p id="display24"> <b> Sorted In Reverse: </b> </p>
+    <p id="p4"> Sorted in Reverse</p>
+    
+
+    <script>
+        var f = [];
+        document.getElementById("p1").innerHTML = f;
+
+        function myFunctionadd() {
+            var r = document.getElementById("textbox").value;
+            f.push(r);
+            document.getElementById("p1").innerHTML = f;
+        }
+        function myFunctiondel() {
+            f.pop();
+            document.getElementById("p1").innerHTML = f;
+        }
+        function myFunctionsort() {
+            f.sort();
+            document.getElementById("p2").innerHTML = f;
+            f.reverse();
+            document.getElementById("p3").innerHTML = f;
+        }
+
+        function myFunctionreverse() { 
+            f.reverse(); 
+            document.getElementById("p4").innerHTML = f;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head> 
+        <title> Push in an Array</title>
+    </head>
+    <body> 
+<p> Push type in a array</p>
+<input type="text" id ="textid"> 
+<button onclick="myFunction()"> Click Here</button>
+<p id = "demo"> </p>
+
+<script> 
+var f= ["Banana", "Orange", "Apple", "Mango"]
+document.getElementById("demo").innerHTML=f;
+
+function myFunction() { 
+    var r = document.getElementById("textid").value;
+    f.push(r);
+    document.getElementById("demo").innerHTML=f;
+} 
+</script>
+</body>
+</html>

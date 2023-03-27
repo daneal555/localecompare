@@ -1,0 +1,208 @@
+<html>
+
+<head>
+    <title>
+        Calculator
+    </title>
+    <style>
+        .calculator-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 15px;
+            color: red;
+        }
+
+        table {
+            border: 25px white;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        input {
+            width: 20%;
+            padding: 30px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-container">
+        <div class="calculator-heading">
+            <h2> Calculator Galaxy powered</h2>
+        </div>
+        <div class="calcuator-input">
+            <input type="text" id="input1" size="15"> <br> <br>
+        </div>
+        <br>
+        <div class="calculator-table">
+            <table border="0px">
+                <tr>
+                    <td>
+                        <button onclick="clearz()"> C </button>
+                    </td>
+                    <td> <button onclick="plusorminus()"> +/- </button></td>
+                    <td> <button onclick="percentage()"> % </button></td>
+                    <td> <button onclick="div()"> / </button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="seven()"> 7 </button></td>
+                    <td> <button onclick="eight()"> 8 </button></td>
+                    <td> <button onclick="nine()"> 9 </button></td>
+                    <td> <button onclick="multi()"> * </button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="four()"> 4 </button></td>
+                    <td> <button onclick="five()"> 5 </button></td>
+                    <td> <button onclick="six()"> 6 </button></td>
+                    <td> <button onclick="minus()"> - </button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="one()"> 1 </button></td>
+                    <td> <button onclick="two()"> 2 </button></td>
+                    <td> <button onclick="three()"> 3 </button></td>
+                    <td> <button onclick="add()"> + </button></td>
+                </tr>
+                <tr>
+                    <td> <button onclick="zero()"> 0 </button></td>
+                    <td> <button onclick="dot()"> . </button></td>
+                    <td colspan="2"> <button style="padding: 30px 40px;" onclick="equals()"> = </button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var a = 0;
+        var operator = 0;
+        var b = 0;
+
+        function clearz() {
+            document.getElementById("input1").value = "";
+        }
+
+        function plusorminus() {
+            var c = document.getElementById("input1").value;
+            var d = parseInt(c);
+            d = d * -1;
+            document.getElementById("input1").value = d;
+        }
+
+        function percentage() {
+            document.getElementById("input1").value;
+            var c = document.getElementById("input1").value;
+            var d = parseInt(c);
+            d = d / 100;
+            document.getElementById("input1").value = d;
+        }
+
+        function div() {
+            document.getElementById("input1").value;
+            var a = document.getElementById("input1").value;
+            operator = 4;
+            document.getElementById("input1").value = "";
+        }
+
+        function seven() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 7;
+        }
+
+        function eight() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 8;
+        }
+
+        function nine() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 9;
+        }
+        function multi() {
+            var c = document.getElementById("input1").value;
+            a = parseInt(c);
+            operator = 3;
+            document.getElementById("input1").value = "";
+        }
+
+        function four() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 4;
+        }
+
+        function five() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 5;
+        }
+        function six() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 6;
+        }
+
+
+        function minus() {
+            var c = document.getElementById("input1").value;
+            a = parseInt(c);
+            operator = 2;
+            document.getElementById("input1").value = "";
+
+        }
+
+        function one() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 1;
+        }
+
+        function two() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 2;
+        }
+
+
+        function three() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 3;
+        }
+
+
+        function add() {
+            var c = document.getElementById("input1").value;
+            a = parseInt(c);
+            operator = 1;
+            document.getElementById("input1").value = "";
+        }
+        function zero() {
+            document.getElementById("input1").value = document.getElementById("input1").value + 0;
+        }
+
+        function dot() {
+            document.getElementById("input1").value = document.getElementById("input1").value + ".";
+        }
+
+        function equals() {
+            var q = document.getElementById("input1").value;
+
+            if (operator == 1) {
+                var z = parseInt(a) + parseInt(q);
+                document.getElementById("input1").value = z;
+            }
+
+            else if (operator == 2) {
+                var z = parseInt(a) - parseInt(q);
+                document.getElementById("input1").value = z
+            }
+
+            else if (operator == 3) {
+                var z = parseInt(a) * parseInt(q);
+                document.getElementById("input1").value = z
+            }
+
+            else if (operator == 4) {
+                var z = parseInt(a) / parseInt(q);
+                document.getElementById("input1").value = z
+            }
+        }
+    </script>
+</body>
+
+</html>

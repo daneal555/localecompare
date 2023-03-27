@@ -1,0 +1,20 @@
+<html> 
+    <head>
+        <title> Concat </title>
+    </head>
+    <body> 
+        <h2> Concat type </h2>
+        <input type = "textbox" id="input1"> 
+        <input type = "textbox" id="input2">
+        <button onclick="myFunction()"> Click here </button> 
+        <p id="out1"></p>
+        <script> 
+        function myFunction(){
+        var x= document.getElementById("input1").value;
+        var y = document.getElementById("input2").value;
+        var z = x.concat(y); 
+document.getElementById("out1").innerHTML=z; 
+        } 
+        </script>
+    </body>
+</html>

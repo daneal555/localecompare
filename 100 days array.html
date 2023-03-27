@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h2> 100 days array </h2>
+<h3> Enter the number of days </h3> 
+<input type="textbox" id="input">
+<button onclick="myFunction()"> Click here for go </button>
+<p id="result"> Answers here </p>
+<script> 
+	function myFunction(){
+		try{ 
+var x = document.getElementById("input").value; 
+if(x=="") throw "Empty"; 
+if(isNaN(x)) throw "Not a Number";
+p= x/30; 
+var y= parseInt(p); 
+var z = x%30; 
+var q = parseInt(z);
+
+ document.getElementById("result").innerHTML=y+ " " + "months" + "  " + "and" + "  " + q + "  " + "days" ;
+}
+catch(err){ 
+	document.getElementById("result").innerHTML="Error  " + err + "."; }
+//document.write(x);
+ 
+}
+
+</script>
+</body>
+</html>

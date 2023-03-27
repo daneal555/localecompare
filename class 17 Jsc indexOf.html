@@ -1,0 +1,23 @@
+<html> 
+    <head>
+        <title> Index Of + Last IndexOf </title>
+    </head>
+    <body> 
+        <h2> Index Of + Last IndexOf </h2>
+        <input type = "textbox" id="input1"> 
+        <input type = "textbox" id="input2">
+        <button onclick="myFunction()"> Click here </button> 
+        <p id="out1"></p>
+        <p id="out2"></p>
+        <script> 
+        function myFunction(){
+        var x= document.getElementById("input1").value;
+        var y = document.getElementById("input2").value;
+        var z = x.indexOf(y); 
+        var a = x.lastIndexOf(y);
+document.getElementById("out1").innerHTML=z;
+document.getElementById("out2").innerHTML=a;
+        } 
+        </script>
+    </body>
+</html>

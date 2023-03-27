@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title> </title>
+</head>
+
+<body>
+    <h2> Contract with input from user</h2>
+    <input type="textbox" id="fname">
+    <input type="textbox" id="sname">
+    <input type="textbox" id="age">
+    <input type="textbox" id="eyecolor">
+    <button onclick="MyFunction()"> Click me </button>
+
+    <p id="output"> </p>
+    <script>
+          function person (firstname,secondname,age,color){
+            this.first = firstname;
+            this.second =secondname;
+            this.color= color;
+            this.age=age;
+
+        }
+        function MyFunction() {
+            
+            var x = document.getElementById("fname").value;
+            var y = document.getElementById("sname").value;
+            var z = document.getElementById("age").value;
+            var a = document.getElementById("eyecolor").value;
+ 
+            const p1 = new person(x,y,z,a); 
+        document.getElementById("output").innerHTML=p1.first + "<br>" +
+        p1.second + "<br>" + p1.age + "<br>" + p1.color;
+        }
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head> 
+    <title> Conversion of Celsius into fahrenheit </title>
+    </head>
+    <body> 
+        <h3> Conversion of Celsius into fahrenheit </h3>
+         <p> Enter temperature in fahrenheit </p> <input type = "text" id="temp"> 
+        <button onclick="Convert()"> Click me</button>
+
+        <script> 
+function Convert(){ 
+    var b= document.getElementById("temp").value; 
+    document.write(b);
+
+    var c=(b - 32)*5/9;
+alert(c + " degree celsius");
+}
+</script> 
+</body>
+
+</html>

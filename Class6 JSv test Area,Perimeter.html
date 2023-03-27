@@ -1,0 +1,32 @@
+<html>
+    <head> 
+        <title> Area & perimiter
+        </title>
+    </head>
+    <body>
+        <h2> Area & Perimiter finding</h2>
+        Please fill here  <input type="text" id="txt"> 
+        <br> 
+
+<button onclick="Mybutton()"> Click here to find Area </button>
+<button onclick="Mybuttonp()"> Click here to find Perimeter </button>
+<p id="result"> here</p>
+<p id="result1"> here</p>
+<script> 
+function Mybutton() { 
+var x= document.getElementById("txt").value;
+//var t = Math.PI* parseInt(x)*parseInt(x);
+//document.getElementById("result").innerHTML=t;
+
+document.getElementById("result").innerHTML= "Area of circle is" + "  " + Math.PI* parseInt(x)*parseInt(x);
+}
+function Mybuttonp() { 
+    var y= document.getElementById("txt").value;
+    document.getElementById("result1").innerHTML= "Perimeter" + "  " + 2*Math.PI* parseInt(y);
+
+
+}
+
+</script>
+    </body>
+</html>

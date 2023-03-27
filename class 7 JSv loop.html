@@ -1,0 +1,27 @@
+<html> 
+    <head> 
+        <title>  Looping tables of 2
+        </title>
+    </head>
+    <body backgroundcolor="red">
+        <button onclick="myFunction()"> Click here </button>
+<p id ="print"> </p>
+<script> 
+function myFunction(){ 
+var x = "";
+var y = 1;
+
+while (y <=50) { 
+    var z = 1;
+    while (z <= 50) { 
+        x=x+(y*z)+"   ";
+        z=z+1; }
+x=x+"<br>";
+y=y+1;
+
+}
+document.getElementById("print").innerHTML=x;
+}
+</script> 
+    </body>
+</html>

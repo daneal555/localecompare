@@ -1,0 +1,25 @@
+<html> 
+    <head> 
+        <title> 
+            CharAT
+        </title>
+    </head>
+    <body> 
+        <h2> Charater AT </h2>
+        <input type="textbox" id="input1"> 
+        <input type="textbox" id="input2">
+        <button onclick="myFunction()"> Click here </button> 
+        <p id="out1"> </p>
+
+        <script> 
+
+        function myFunction() {
+        var x= document.getElementById("input1").value;
+        var y= parseInt( document.getElementById("input2").value);
+        var z = x.charAt(y);
+        var a = x.charCodeAt(y);
+        window.alert(z + " " +"unicode is" + " " + a);
+        }
+        </script>
+    </body>
+    </html>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+</head>
+
+<body>
+    <h2> Constructor</h2>
+    <p id="results"> </p>
+    <script>
+        function Person(Firstname, Secondname, age, Eyecolor) {
+
+            this.Firstname = Firstname;
+            this.Secondname = Secondname;
+            this.age = age;
+            this.Eyecolor = Eyecolor;
+        }
+        const p1= new Person("Mohamed", "Daneal", 23, "green");
+        document.getElementById("results").innerHTML= (" Mr" + "." + 
+        p1.Firstname + p1.Secondname + " aged " + p1.age);
+
+    </script>
+</body>
+
+</html>

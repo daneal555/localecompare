@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>
+        Concat
+    </title>
+</head>
+
+<body>
+
+    <h2> Concat types </h2>
+
+    <input type="textbox" id="input1"> <br><br>
+    <button onclick="myButton1()"> Click 1 </button>
+    <button onclick="myButton2()"> Click 2 </button>
+    <button onclick="myButton3()"> Click 3 concat </button>
+    <p id="array1"> </p>
+    <p id="array2"> </p>
+    <p id="array3"> </p>
+    <script>
+
+        var x = [];
+
+        function myButton1() {
+            var y = document.getElementById("input1").value;
+            x.push(y);
+            document.getElementById("input1").value = "";
+            document.getElementById("array1").innerHTML = x;
+        }
+        var v = [];
+        function myButton2() {
+            var z = document.getElementById("input1").value;
+            v.push(z);
+            document.getElementById("input1").value = "";
+            document.getElementById("array2").innerHTML = v;
+        }
+        function myButton3() {
+//var a=document.getElementById("input1").value;
+//document.getElementById("input1").value = "";
+document.getElementById("array3").innerHTML = x.concat(v);
+        }
+    </script>
+</body>
+
+</html>

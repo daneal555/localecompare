@@ -1,0 +1,27 @@
+<html> 
+    <head> 
+<script> 
+
+</script>
+    <title> 
+        to String
+    </title>
+    
+</head>
+    <body> 
+        <h2>to String - binary conversion </h2>
+        <input type="textbox" id = "input1">
+       
+<button onclick="Myfunction()"> Click here </button>
+<p id="results"> </p>
+<script> 
+
+function Myfunction() { 
+
+    var x = parseInt( document.getElementById("input1").value);
+
+    document.getElementById("results").innerHTML=x.toString(17); 
+}
+</script>
+    </body>
+</html>

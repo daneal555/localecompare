@@ -1,0 +1,44 @@
+<html> 
+    <head> 
+        <title>  Looping tables of 2
+        </title>
+    </head>
+    <body> 
+    
+    <input type="text" id="textbox">
+    <button onclick="myFunction()"> Click here </button>
+<p id="print"> </p>
+
+<script> 
+
+function myFunction(){
+   
+var pattern = "";
+var row = document.getElementById("textbox").value;
+  var n=row;
+  var z = 1;
+   
+while (n>=0) { 
+    var limit = 1;
+    while (limit<=n ) { 
+pattern = pattern+"#"; 
+limit=limit+1; }
+ 
+var j=1;
+
+while (j <= z) {  // limit <= row
+        //document.write("hi");
+        pattern=pattern+("*");
+        j=j+1; }
+
+z=z+1;
+
+pattern=pattern+"<br>";
+n-=1;
+}
+document.getElementById("print").innerHTML=pattern;
+}
+</script> 
+    </body>
+</html>
+					

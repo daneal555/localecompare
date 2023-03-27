@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>
+        time variation
+    </title>
+
+</head>
+
+<body>
+    <h2> Time in Numbers + AM & PM</h2>
+    <button onclick="MyFunction()"> Click here </button>
+    <p id="demo">
+
+        <script>
+            function MyFunction() {
+                var x;
+                var time = new Date().getHours();
+                document.getElementById("demo").innerHTML = time;
+                if (time > 12) {
+                    x = "PM";
+                    time = time - 12;
+                }
+
+                else { x = "AM" }
+                var min = new Date().getMinutes();
+                var sec = new Date().getSeconds();
+
+                document.getElementById("demo").innerHTML = time + ":" + min + ":" + sec + ":" + x;
+
+            }
+        </script>
+
+</body>

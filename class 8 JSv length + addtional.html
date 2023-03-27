@@ -1,0 +1,27 @@
+<html> 
+    <head> 
+        <title> 
+            Length additional 
+        </title>
+    </head>
+     <body> 
+
+        <h2> The length property </h2>
+        <input type="text" id="input">  
+        <button onclick="myFunction()"> Click here </button>
+        <p id ="demo"> </p>
+        
+        <script> 
+        var f= ["Banana, Orange, Apple, Mango"]; 
+        document.getElementById("demo").innerHTML=f;
+
+        function myFunction() { 
+            var z=document.getElementById("input").value;
+            f[f.length]=z ; 
+            document.getElementById("demo").innerHTML=f;
+        }
+
+
+        </script>
+        </body>
+</html>

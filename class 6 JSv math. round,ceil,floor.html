@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>
+        Math. Round,ceil,Floor
+    </title>
+    </head>
+    <body> 
+        <h2> String math. Round , Ceil & Floor</h2>
+<input type ="text" id ="round"> 
+<input type ="text" id ="ceil"> 
+<input type ="text" id ="Floor"> 
+
+<br> <br>
+<button onclick="result()"> Click here</button>
+
+<p id="p1"> here </p>
+<p id="p2"> here </p>
+<p id="p3"> here </p>
+<script>
+
+    function result() {
+        var a=document.getElementById("round").value;
+var b=document.getElementById("ceil").value;
+var c=document.getElementById("Floor").value;
+
+
+document.getElementById("p1").innerHTML=Math.round(a);
+document.getElementById("p2").innerHTML=Math.ceil(b);
+document.getElementById("p3").innerHTML=Math.floor(c);
+    }
+
+</script>
+
+    </body>
+    </html>
+
+    area- pi*r*r
+    perimiter -  2*pi*r

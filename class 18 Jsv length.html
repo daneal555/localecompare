@@ -1,0 +1,45 @@
+<html> 
+    <head> 
+        <title> length & match </title>
+    </head>
+    <body> 
+
+        <h2> length & match </h2>
+        
+        <input type="textbox" id="input1"> 
+        <input type="textbox" id="input2"> 
+        <input type="textbox" id="input"> <br> 
+        <button onclick="myfunction()"> Click here </button>
+        <p id ="length"> </p>
+        <p id="match"> </p>
+        <p id="replace"> </p>
+        <p id="search"></p>
+        <p id="slice"> </p>
+        <p id="split"> </p>
+
+        <script> 
+        
+        function myfunction() { 
+            
+         var x = document.getElementById("input1").value;
+         var y = document.getElementById("input2").value;
+         var z = document.getElementById("input").value;
+
+         var a = x.length;
+         var b = x.match(y);
+         var c = x.replace(y,z);
+         var d = x.search(b); 
+         var e = x.slice(0,3);
+         var f = x.split(" ");
+
+         document.getElementById("length").innerHTML=a+"length"; 
+         document.getElementById("match").innerHTML=b+"match";
+         document.getElementById("replace").innerHTML=c+"replace";
+         document.getElementById("search").innerHTML=d+"search";
+         document.getElementById("slice").innerHTML=e+"slice";
+         document.getElementById("split").innerHTML=f+"split";
+         }
+         </script>
+    </body>
+    </html>
+    

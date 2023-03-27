@@ -1,0 +1,22 @@
+<html>
+    <head> 
+        <title> Search + Replace </title>
+    </head>
+    <body> 
+        <button onclick="Myfunction()"> Click here</button>
+        <p> Hello from Galaxy </p>
+        <script> 
+function Myfunction() { 
+var x = "Hello from Galaxy"; 
+var y = x.search(/galaxy/i);
+ var e= x.replace(/Galaxy/i,"Space");
+
+window.alert("I found Galaxy in "+y+" and change as "+e); 
+
+
+} 
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title> Infinity </title>
+
+</head>
+
+<body>
+    <p> Infinity calculation</p>
+    <p id="Infi"> </p>
+    <input type = "text" id="Infiput">
+    <button onclick="myFunctioninfi()"> click this </button>
+
+    <script>
+        function myFunctioninfi() {
+           // document.write("hello");
+            var myNumber = document.getElementById("Infiput").value;
+            var x = parseInt(myNumber);
+            document.write(x);
+            var txt = "";
+           while (x != Infinity) {
+              x = x * x;
+               txt = txt + x + "<br>";
+           }
+           document.getElementById("Infi").innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title> Multiplication</title>
+    <style>
+        body{
+           margin-left: 450px;
+            background-color: aquamarine;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <h2> Enter a number to Multiply till times 10</h2>
+    
+    <input type="text" id="input">
+    <button onclick="multiFunction()"> Click Here</button>
+    <p id="multi"></p>
+    <script>
+        function multiFunction() {
+            var myNumber = document.getElementById("input").value;
+            var x = parseInt(myNumber);
+            var txt = "";
+            var y = 1;
+            while (y <= 10) {
+                var z = x * y;
+                txt = txt + y + "x" + x + "=" + z + "<br>";
+                y = y + 1;
+            }
+            document.getElementById("multi").innerHTML = txt;
+        }
+    </script>
+</body>
+
+</html>

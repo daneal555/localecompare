@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title> Array case type </title>
+</head>
+
+<body>
+    <h2> Case in array </h2>
+    <table>
+        <tr>
+            <td> Enter your Name <input type="textbox" id="name"> </td>
+        </tr>
+        <tr> </tr>
+        <tr> </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> Maths <input type="textbox" id="mark1"> </td>
+        </tr>
+        <tr>
+            <td> </td>
+        </tr>
+        <tr>
+            <td> English <input type="textbox" id="mark2"></td>
+        </tr>
+        <tr>
+            <td> Science <input type="textbox" id="mark3"></td>
+        </tr>
+        <tr>
+            <td> Social Studies <input type="textbox" id="mark4"></td>
+        </tr>
+        <tr>
+            <td> Islamic <input type="textbox" id="mark5"> </td>
+        </tr>
+    </table>
+
+    <button onclick="myFunction()"> Click here </button>
+    <p id="nameprint"></p>
+    <script>
+        var a;
+        var u;
+        var v;
+        var x;
+        var y;
+        var z;
+        function myFunction() {
+            a = document.getElementById("name").value;
+
+            u = document.getElementById("mark1").value;
+            v = document.getElementById("mark2").value;
+            x = document.getElementById("mark3").value;
+            y = document.getElementById("mark4").value;
+            z = document.getElementById("mark5").value;
+            //
+
+            var t = parseInt(u) + parseInt(v) + parseInt(x) + parseInt(y) + parseInt(z);
+            var per = (t / 500) * 100
+            var f = per / 10;
+
+            var g;
+            switch (parseInt(f)) {
+                case 9:
+                    g = "A+";
+                    break;
+                case 8:
+                    g = "A";
+                    break;
+                case 7:
+                    g = "B+";
+                    break;
+                case 6:
+                    g = "B";
+                    break;
+                case 5:
+                    g = "c+";
+                    break;
+                /* case 4:
+                     g = "c";
+                     break;
+                 case 3:
+                     g = "D+";
+                     break;
+                 case 2:
+                     g = "D";
+                     break;*/
+                default:
+                    g = "failed";
+
+            }
+
+            document.getElementById("nameprint").innerHTML = "Student Named" + " " + a + "  " + "have Scored" +
+                per + "<br>" + "with a " + g;
+        }
+
+
+    </script>
+</body>
+
+</html>
